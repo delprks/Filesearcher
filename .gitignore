@@ -2,3 +2,5 @@
 .idea
 .worksheet
 target
+bin
+test-bin
