@@ -21,4 +21,12 @@ class MatcherTest extends FlatSpec{
 
     assert(results == List("readme.txt"))
   }
+
+  "Matcher that is not passed a root directory" should
+  "should use current directory" in {
+    val matcher = new Matcher("filter")
+
+    assert(matcher.rootLocation == new File(".").getCanonicalPath())
+  }
+
 }
