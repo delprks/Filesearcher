@@ -2,10 +2,13 @@ package fileSearcher
 
 import java.io.File
 
+import scala.annotation.tailrec
+
 class Matcher(filter: String, val rootLocation: String = new File(".").getCanonicalPath(), searchSubDirectories: Boolean = false) {
   val rootIOObject = FileConverter.convertToIOObject(new File(rootLocation))
 
   def execute() = {
+    @tailrec
     def recursiveMatch(files: List[IOObject], currentList: List[FileObject]) : List[FileObject] =
       files match {
         case List() => currentList
