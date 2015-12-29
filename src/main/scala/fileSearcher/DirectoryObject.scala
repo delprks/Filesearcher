@@ -1,4 +1,4 @@
 package fileSearcher
 
-class DirectoryObject(val name: String) extends IOObject{}
+class DirectoryObject(val name: String) extends IOObject
 

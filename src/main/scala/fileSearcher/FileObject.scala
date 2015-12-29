@@ -1,3 +1,3 @@
 package fileSearcher
 
-class FileObject(val name: String) extends IOObject{}
+class FileObject(val name: String) extends IOObject
