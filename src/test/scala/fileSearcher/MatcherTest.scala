@@ -1,7 +1,7 @@
 package fileSearcher
 
 import org.scalatest.FlatSpec
-import java.io.File;
+import java.io.File
 
 class MatcherTest extends FlatSpec{
   "Matcher that is passed a file matching the filter should" should
